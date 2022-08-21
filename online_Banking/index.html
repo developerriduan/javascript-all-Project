@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center fw-bold "> Welcome Your Account </h1>
+        <div class="submit_area">
+            <h4 class="text-light mb-3"> <i class="fa fa-spinner fa-pulse " style="font-size:20px;color: #0dcaf0"></i>
+                Login</h4>
+            <input class="form-control" type="text" placeholder="Enter Your Email">
+            <br>
+            <input class="form-control" type="Password" placeholder="Enter Your password">
+            <br>
+            <button class="text-light btn btn-info fw-bold" id="login">Enter</button>
+        </div>
+    </div>
+
+    <div id="transaction_Area">
+        <h1 class="text-center fw-bold py-3">Transaction Area</h1>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="Deposited status">
+                    <h5>Deposited</h5>
+                    <h2>$<span id="currentDeposited">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Blance status">
+                    <h5>Blance</h5>
+                    <h2>$<span id="currentBlance">1240</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit_area text-white ">
+                    <h4>Deposited</h4>
+                    <input id="DepositedAmount" type="text" class="form-control"
+                        placeholder="$ Amount You Want to Deposited">
+                    <br>
+                    <button id="addDeposited" class="btn btn-success">Deposited</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit_area text-white">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount" type="text" class="form-control"
+                        placeholder="$ Amount You Want to Withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="apps.js"></script>
+</body>
+
+</html>
