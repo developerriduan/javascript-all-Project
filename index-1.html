@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main" id="login_area">
+        <h2> Login Page</h2>
+               <div class="login_head">
+                <div class="login-area">
+                    <div class="login-div">
+                        <input type="text" name="" id="" placeholder="Type your Email">
+                        <input type="password" name="" id="" placeholder="Type your Password">
+                        <button class="login-btn" onclick="handellogin()">Submit </button>
+                    </div>
+                </div>
+              </div>
+    </div>
+                     <!-- transection-area -->
+    <div class="transection-area" id="transection-area">
+        <div class="blance">
+            <div>
+                <h2> Deposit</h2>
+                <h2>৳ <span id="presentDeposit">00</span> </h2>
+            </div>
+
+            <!-- ---------------------------- -->
+            <div>
+                <h2> Withdraw</h2>
+                <h2>৳ <span id="presentWithdrw">00</span> </h2> 
+            </div>
+
+
+            <div>
+                <h4> Total Balance </h4>
+                <h2>৳ <span id="total_blance"> 170</span> </h2>
+            </div>
+        </div>
+
+        <div class="transection-input">
+            <div>
+                <input type="text" placeholder="Deposit Amount" id= "deposit_input">
+                <button class="submit-btn"  onclick="handleDeposit()"> Deposit </button>
+            </div>
+            <!-- ----------------------- -->
+            <div>
+                <input type="text" placeholder="Withdraw Amount" id="withdeaw_input">
+                <button class="submit-btn" onclick="handlewithdraw()"> Withdraw </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
